@@ -1,0 +1,120 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "master.cshtml";
+    var backgroundImage = Model.HeroBackgroundImage != null ? Model.HeroBackgroundImage.Url : String.Empty;
+}
+<section class="section section--full-height background-image-full overlay overlay--dark section--content-center section--thick-border"
+         style="background-image: url('@backgroundImage')">
+    <div class="section__hero-content">
+        <h1>@Model.HeroHeader</h1>
+        <p class="section__description">@Model.HeroDescription</p>
+        @if (Model.HeroCtalink != null)
+        {
+            <a class="button button--border--solid" href="@Model.HeroCtalink.Url">
+                @Model.HeroCtacaption
+            </a>
+        }
+    </div>
+</section>
+<div id="paralelogram">
+    
+</div>
+
+<section class="section section">
+    <div class="row">
+        <div class="col-4 offset-md-2 title-section">
+            <h1 class="title"> Loremi eshte lorem. Ispsumi eshte Ipsum</h1>
+        </div>
+        <div class="col-5 text-section">
+            <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum. Praesent at leo gravida, tempus diam sit amet, tristique nisi. Curabitur urna massa, vehicula at arcu ac, ornare interdum mauris. Nulla a neque odio. Vestibulum eget neque dui. Integer vel justo est. Proin luctus, quam quis consequat pellentesque, magna nulla aliquam mauris,</p>
+            <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum. Praesent at leo gravida, tempus diam sit amet, tristique nisi. Curabitur urna massa, vehicula at arcu ac, ornare interdum mauris.</p>
+
+        </div>
+    </div>
+   @* @Html.GetGridHtml(Model, "bodyText", "bootstrap3-fluid") *@
+</section>
+<section>
+    <div class="container business-section">
+    <div class="row">
+        <div class="col-3">
+            <h1 class="text-lowercase business-title">our markets</h1>
+            <h3 >Lorem eshte lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor.</p>
+            <button class="btn btn-outline-primary">Test</button>
+        </div>
+        <div class="col-9">
+            <img class="image-clip" src="https://www.w3schools.com/w3css/img_lights.jpg" />
+            <div class="backgound-above">
+                <div class="text-section">
+                    <h2 class="w-100">Business</h2>
+                    <p>Loremi eshte our lorem - and it can impact Ipsumin</p>
+                    <a href="#" class="w-100">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="container services-section mt-5">
+        <div class="row">
+            <div class="col-8 pl-0 pr-0">
+                <div class="text-services w-60">
+                    <h1 class="text-lowercase business-title">our services</h1>
+                    <h5 >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum.</h5>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor.Etiam dignissim diam non tortor vestibulum fermentum.</p>
+                </div>
+                <div style="position:relative">
+                <img class="image-clip-services" src="https://www.w3schools.com/w3css/img_lights.jpg" />
+                <div class="backgound-above-services">
+                    <div class="text-section">
+                        <h2 class="w-100">Business</h2>
+                        <p>Loremi eshte our lorem - and it can impact Ipsumin</p>
+                        <a href="#" class="w-100">Learn more</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 20rem; border:none">
+                  <img class="card-img-top" style="max-height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Card image cap">
+                  <div class="card-body" >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Lear more</a>
+                  </div>
+                </div>
+                <div class="card mt-2" style="width: 20rem; border:none">
+                  <img class="card-img-top" style="max-height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Card image cap">
+                  <div class="card-body" >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Lear more</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section section--themed">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="ta-center">
+                <h2>@Model.FooterHeader</h2>
+                <p class="section__description mw-640 ma-h-auto">@Model.FooterDescription</p>
+
+                <a class="button button--border--light_solid" href="@Model.FooterCtalink.Url">
+                    @Model.FooterCtacaption
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
