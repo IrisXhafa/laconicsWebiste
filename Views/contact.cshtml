@@ -13,43 +13,191 @@
     // Build the coordinates string
     var coordinatesString = longitude + "," + latitude + "," + longitude + "," + latitude;
 }
-@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
-<section class="section">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-6">
-                <h2>@Model.MapHeader</h2>
-                <iframe width="550"
-                        height="400"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=@coordinatesString&amp;layer=mapnik&amp;marker=@Model.MapCoordinates"
-                        style="border: 1px solid black">
-                </iframe>
-
-                <br />
-
-                <small>
-                    <a href="https://www.openstreetmap.org/?mlat=@latitude&amp;mlon=@longitude#map=@zoomLevel/@latitude/@longitude&amp;layers=N">View Larger Map</a>
-                </small>
-            </div>
-
-            <div class="col-md-6">
-                <h2>@Model.ContactFormHeader</h2>
-                @Model.ContactIntro
-                <p class="compat-msg">
-        <em>Umbraco Forms</em> is required to render this form.It's a breeze to install, all you have to do is
-        go to the<em> Umbraco Forms</em> section in the back office and click Install, that's it! :) 
-        <br /><br />
-        <a href="/umbraco/#/forms" class="button button--border--solid">Go to Back Office and install Forms</a>
-        <!-- When Umbraco Forms is installed, uncomment this line -->
-        @* @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid=Model.ContactForm.ToString()}) *@
-        </p>
-            </div>
-
-        </div>
-    </div>
-</section>
+<div id="page-container" class="et-animated-content" style="padding-top: 80px; overflow-y: hidden; margin-top: -1px;">
+<div id="et-main-area">
+<div id="main-content">
+<article id="post-213434" class="post-213434 page type-page status-publish hentry">
+<div class="entry-content">
+<div id="et-boc" class="et-boc">
+<div class="et-l et-l--post">
+<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_dark et_had_animation" style="">
+<div class="et_pb_text_inner"><h1>Contact Us</h1>
+<h2>Serving Your Local Area</h2></div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_1 et_pb_row_3-4_1-4">
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+<div id="et_pb_contact_form_0" class="et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix" data-form_unique_num="0">
+<div class="et-pb-contact-message"></div>
+<div class="et_pb_contact">
+<form class="et_pb_contact_form clearfix" method="post" action="https://www.elegantthemes.com/layouts/business/locksmith-contact-page/live-demo">
+<p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_half" data-id="name" data-type="input">
+<label for="et_pb_contact_name_0" class="et_pb_contact_form_label">Name</label>
+<input type="text" id="et_pb_contact_name_0" class="input" value="" name="et_pb_contact_name_0" data-required_mark="required" data-field_type="input" data-original_id="name" placeholder="Name">
+</p><p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_half et_pb_contact_field_last" data-id="email" data-type="email">
+<label for="et_pb_contact_email_0" class="et_pb_contact_form_label">Email Address</label>
+<input type="text" id="et_pb_contact_email_0" class="input" value="" name="et_pb_contact_email_0" data-required_mark="required" data-field_type="email" data-original_id="email" placeholder="Email Address">
+</p><p class="et_pb_contact_field et_pb_contact_field_2 et_pb_contact_field_half" data-id="phone" data-type="input">
+<label for="et_pb_contact_phone_0" class="et_pb_contact_form_label">Phone Number</label>
+<input type="text" id="et_pb_contact_phone_0" class="input" value="" name="et_pb_contact_phone_0" data-required_mark="required" data-field_type="input" data-original_id="phone" placeholder="Phone Number" pattern="[0-9\s-]*" title="Only numbers allowed.">
+</p><p class="et_pb_contact_field et_pb_contact_field_3 et_pb_contact_field_half et_pb_contact_field_last" data-id="zip" data-type="input">
+<label for="et_pb_contact_zip_0" class="et_pb_contact_form_label">ZIP Code</label>
+<input type="text" id="et_pb_contact_zip_0" class="input" value="" name="et_pb_contact_zip_0" data-required_mark="required" data-field_type="input" data-original_id="zip" placeholder="ZIP Code" pattern="[0-9\s-]*" title="Only numbers allowed.">
+</p><p class="et_pb_contact_field et_pb_contact_field_4 et_pb_contact_field_last" data-id="message" data-type="text">
+<label for="et_pb_contact_message_0" class="et_pb_contact_form_label">Message</label>
+<textarea name="et_pb_contact_message_0" id="et_pb_contact_message_0" class="et_pb_contact_message input" data-required_mark="required" data-field_type="text" data-original_id="message" placeholder="Message"></textarea>
+</p>
+<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0">
+<div class="et_contact_bottom_container">
+<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button">Submit</button>
+</div>
+<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="8bc0680105"><input type="hidden" name="_wp_http_referer" value="/layouts/business/locksmith-contact-page/live-demo">
+</form>
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h3>DiviLock</h3>
+<p>1235 Divi St. #200<br> San Francisco, CA 93113</p></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h3>Contact Us</h3>
+<p><a href="mailto:info@divilock.com">info@divilock.com<br></a>(451) 321-3922</p></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h3>Hours</h3>
+<p>Service: 24/7<br>
+Office: 8am – 6pm M-F</p></div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_2 et_pb_row_fullwidth et_pb_gutters1">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_text_inner"><p>Contact</p></div>
+</div> 
+</div> 
+</div> 
+<div class="et_pb_bottom_inside_divider" style="background-size: 3038px 307.2px;"></div>
+</div> <div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_row et_pb_row_3">
+<div class="et_pb_column et_pb_column_2_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>How Do You Know If You Need a Locksmith?</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta </div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Curabitur non nulla sit amet.</span></h4>
+</div>
+</div> 
+</div> <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item  et_pb_toggle_close et_had_animation" style="">
+<h5 class="et_pb_toggle_title">More Info</h5>
+<div class="et_pb_toggle_content clearfix">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</div> 
+</div> <div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Sed porttitor lectus nibh.</span></h4>
+</div>
+</div> 
+</div> <div class="et_pb_module et_pb_toggle et_pb_toggle_1 et_pb_toggle_item  et_pb_toggle_close et_had_animation" style="">
+<h5 class="et_pb_toggle_title">More Info</h5>
+<div class="et_pb_toggle_content clearfix">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</div> 
+</div> <div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Donec rutrum congue leo eget.</span></h4>
+</div>
+</div> 
+</div> <div class="et_pb_module et_pb_toggle et_pb_toggle_2 et_pb_toggle_item  et_pb_toggle_close et_had_animation" style="">
+<h5 class="et_pb_toggle_title">More Info</h5>
+<div class="et_pb_toggle_content clearfix">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</div> 
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_2 et_section_regular">
+<div class="et_pb_row et_pb_row_4 et_pb_gutters2">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Residential</span></h4>
+<div class="et_pb_blurb_description"><p>Integer posuere erat a ante venenatis dapib estibulum id ligula porta felis euismod semper ipsum dolor amet</p>
+<p><a style="color: white;"><strong>LEARN MORE</strong></a></p></div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Commercial</span></h4>
+<div class="et_pb_blurb_description"><p>Integer posuere erat a ante venenatis dapib estibulum id ligula porta felis euismod semper ipsum dolor amet</p>
+<p><a style="color: white;"><strong>LEARN MORE</strong></a></p></div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_dark et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Automotive</span></h4>
+<div class="et_pb_blurb_description"><p>Integer posuere erat a ante venenatis dapib estibulum id ligula porta felis euismod semper ipsum dolor amet</p>
+<p><a style="color: white;"><strong>LEARN MORE</strong></a></p></div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_3 et_section_regular">
+<div class="et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_6  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Head Office</span></h4>
+<div class="et_pb_blurb_description">136 Botsford Valleys Apt. 264</div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_7  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>Call Us</span></h4>
+<div class="et_pb_blurb_description"><p>(451) 321-3922</p></div>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_blurb et_pb_blurb_8  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light et_had_animation" style="">
+<div class="et_pb_blurb_content">
+<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-animated"></span></span></div>
+<div class="et_pb_blurb_container">
+<h4 class="et_pb_module_header"><span>EMAIL US</span></h4>
+<div class="et_pb_blurb_description"><p>info@gmail.com</p></div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+</div>  </div>
+</div>
+</div>
+</div> 
+</article> 
+</div> 
+</div> 
+</div>

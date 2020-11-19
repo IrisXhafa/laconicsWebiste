@@ -4,8 +4,11 @@
     Layout = "master.cshtml";
     var backgroundImage = Model.HeroBackgroundImage != null ? Model.HeroBackgroundImage.Url : String.Empty;
 }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="main-photo">
 <section class="section section--full-height background-image-full overlay overlay--dark section--content-center section--thick-border"
-         style="background-image: url('@backgroundImage')">
+         style="background-image: url('@backgroundImage'); position:relative">
+    <
     <div class="section__hero-content">
         <h1>@Model.HeroHeader</h1>
         <p class="section__description">@Model.HeroDescription</p>
@@ -17,16 +20,15 @@
         }
     </div>
 </section>
-<div id="paralelogram">
-    
 </div>
-
+<div style="position:relative">
+    <div class="background"></div>
 <section class="section section">
     <div class="row">
-        <div class="col-4 offset-md-2 title-section">
+        <div class="col-md-4 offset-md-2 col-sm-12 title-section">
             <h1 class="title"> Loremi eshte lorem. Ispsumi eshte Ipsum</h1>
         </div>
-        <div class="col-5 text-section">
+        <div class="col-md-5 col-sm-12 text-section">
             <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum. Praesent at leo gravida, tempus diam sit amet, tristique nisi. Curabitur urna massa, vehicula at arcu ac, ornare interdum mauris. Nulla a neque odio. Vestibulum eget neque dui. Integer vel justo est. Proin luctus, quam quis consequat pellentesque, magna nulla aliquam mauris,</p>
             <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum. Praesent at leo gravida, tempus diam sit amet, tristique nisi. Curabitur urna massa, vehicula at arcu ac, ornare interdum mauris.</p>
 
@@ -34,16 +36,17 @@
     </div>
    @* @Html.GetGridHtml(Model, "bodyText", "bootstrap3-fluid") *@
 </section>
-<section>
+<section >
+    
     <div class="container business-section">
     <div class="row">
-        <div class="col-3">
+        <div class="col-md-3 col-sm-12">
             <h1 class="text-lowercase business-title">our markets</h1>
             <h3 >Lorem eshte lorem</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor.</p>
             <button class="btn btn-outline-primary">Test</button>
         </div>
-        <div class="col-9">
+        <div class="col-md-9 col-sm-12">
             <img class="image-clip" src="https://www.w3schools.com/w3css/img_lights.jpg" />
             <div class="backgound-above">
                 <div class="text-section">
@@ -56,10 +59,11 @@
     </div>
     </div>
 </section>
-<section>
+</div>
+<section  style="margin-top:5%">
     <div class="container services-section mt-5">
         <div class="row">
-            <div class="col-8 pl-0 pr-0">
+            <div class="col-md-8 col-sm-12 pl-0 pr-0">
                 <div class="text-services w-60">
                     <h1 class="text-lowercase business-title">our services</h1>
                     <h5 >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque orci, luctus hendrerit mollis sed, sagittis non tortor. Etiam dignissim diam non tortor vestibulum fermentum.</h5>
@@ -76,7 +80,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12 pl-0">
                 <div class="card" style="width: 20rem; border:none">
                   <img class="card-img-top" style="max-height:200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Card image cap">
                   <div class="card-body" >
@@ -97,17 +101,109 @@
         </div>
     </div>
 </section>
+<section style="margin-top:5%">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h4 class="text-lowercase team-title">not your ordinary bunch of nerds</h1>
+        </div>
+    </div>
+  <!-- Top content -->
+<div class="container text-center my-3">
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card card-body d-flex">
+                            
+                        <img class="img-fluid img-round member-image" src="http://placehold.it/380?text=1">
+                           <div class="member-info">
+                            <p class="member-p">Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraphLorem paragraph Lorem paragraph Lorem paragraph Lorem paragraph</p>
+                            <h6>name of member</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
 
-
-<section class="section section--themed">
+<section class="section section--themed contact" style="margin-top:5%">
 
     <div class="container">
         <div class="row">
 
-            <div class="ta-center">
+            <div class="ta-center d-flex col-md-8 offset-md-2 col-sm-12" style="justify-content:space-between">
                 <h2>@Model.FooterHeader</h2>
-                <p class="section__description mw-640 ma-h-auto">@Model.FooterDescription</p>
-
                 <a class="button button--border--light_solid" href="@Model.FooterCtalink.Url">
                     @Model.FooterCtacaption
                 </a>
