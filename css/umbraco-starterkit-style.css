@@ -1924,7 +1924,8 @@ body.frontpage .section__hero-content {
 }
 
 .overlay {
-    position: relative
+    position: relative;
+    padding: 0;
 }
 
     .overlay:after {
@@ -3298,4 +3299,8 @@ article {
         -ms-grid-row-align: center;
         align-items: center
     }
+}
+#photos{
+     background-image:  url(http://localhost:4105/media/htlbwdkm/coming-soon.png) !important
+    
 }
